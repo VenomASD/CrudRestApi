@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"log"
 	"net/http"
 
 	"github.com/gorilla/mux"
@@ -21,7 +22,18 @@ func CreateEmployee(w http.ResponseWriter , r *http.Request) {
 func GetEmployees(w http.ResponseWriter , r *http.Request) {
 	w.Header().Set("Content-Type","application/json")
 	var emp []Employee
-	Database.Find(&emp)
+	var first_name, last_name string
+	// Raw SQL
+	rows, err := Database.Raw("select first_name,last_name from actor where first_name = ?", "PENELOPE").Rows()
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer rows.Close()
+	for rows.Next() {
+	rows.Scan(&first_name, &last_name)
+	log.Println(first_name , " " , last_name)
+	// do something
+	}
 	json.NewEncoder(w).Encode(emp)	
 }
 

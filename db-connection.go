@@ -6,7 +6,7 @@ import (
 		"gorm.io/gorm")
 
 var Database *gorm.DB
-var urlDSN = "root:root@tcp(localhost:3306)/godb?parseTime=true"
+var urlDSN = "root:root@tcp(localhost:3306)/sakila?parseTime=true"
 var err error
 
 func DataMigration() {
