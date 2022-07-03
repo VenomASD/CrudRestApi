@@ -5,9 +5,8 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
-# Make data base, printed on Sat Jun 25 10:56:33 2022
+# Make data base, printed on Sun Jul 03 23:01:42 2022
 
 # Variables
 
@@ -22,7 +21,7 @@ USERPROFILE = C:\Users\hp
 # environment
 LOCALAPPDATA = C:\Users\hp\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-c35a009a-39dc-4bf4-967d-790ef9ddf8a5-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-8bec97a4-5bc9-4f77-b839-c37616a7d374-sock
 # environment
 VSCODE_CWD = C:\Users\hp\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -40,7 +39,7 @@ GOPATH = C:\Users\hp\go
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_11308_ILPOGBZXBUGTRLIA
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_7764_XBHDSNWTJOEVNNCD
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -96,7 +95,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 11308
+VSCODE_PID = 7764
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -126,7 +125,7 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\Go\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\hp\AppData\Local\Microsoft\WindowsApps;;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hp\go\bin
+PATH = C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\Go\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\hp\AppData\Local\Microsoft\WindowsApps;;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hp\go\bin
 # environment
 ZES_ENABLE_SYSMAN = 1
 # environment
@@ -206,8 +205,7 @@ ALLUSERSPROFILE = C:\ProgramData
 # environment
 SESSIONNAME = Console
 # default
-.FEATURES := target-sp 
-ecific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
 # environment
 PROCESSOR_REVISION = 8e0a
 # environment
@@ -223,9 +221,9 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 142 Stepping 10, GenuineIntel
 
 # Directories
 
-# . (key c:/Users/hp/Desktop/CrudRestApi, mtime 1656093013): 17 files, no impossibilities.
+# . (key c:/Users/hp/Desktop/CrudRestApi, mtime 1656138618): 15 files, no impossibilities.
 
-# 17 files, no impossibilities in 1 directories.
+# 15 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -236,7 +234,7 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 142 Stepping 10, GenuineIntel
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-24 21:56:46
+#  Last modified 2022-06-25 11:51:56
 #  File has been updated.
 #  Successfully updated.
 
@@ -244,11 +242,11 @@ Makefile:
 .DEFAULT:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
-#  File has not been updated.
+#  File has not been 
+ updated.
 
 all: build test
-#  Command line target 
-.
+#  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
@@ -311,12 +309,12 @@ test:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 23 / storage = 204 B / avg = 8 B
-# current buf: size = 8174 B / used = 204 B / count = 23 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 21 / storage = 168 B / avg = 8 B
+# current buf: size = 8174 B / used = 168 B / count = 21 / avg = 8 B
 
-# strcache performance: lookups = 35 / hit rate = 34%
+# strcache performance: lookups = 33 / hit rate = 36%
 # hash-table stats:
-# Load=23/8192=0%, Rehash=0, Collisions=0/35=0%
-# Finished Make data base on Sat Jun 25 10:56:33 2022
+# Load=21/8192=0%, Rehash=0, Collisions=0/33=0%
+# Finished Make data base on Sun Jul 03 23:01:42 2022
 
  

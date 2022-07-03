@@ -2,8 +2,10 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"log"
 	"net/http"
+	"strconv"
 )
 
 func CreateData(w http.ResponseWriter, r *http.Request) {
@@ -11,9 +13,13 @@ func CreateData(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	var act Actor
 	json.NewDecoder(r.Body).Decode(&act)
-	_, err := Database.Raw("Insert into actor (actor_id, first_name, last_name) values (?,?,?)", act.ActorId, act.FirstName, act.LastName).Rows()
+	QueryTemplate := fmt.Sprintf(CreateDataQuery, strconv.Itoa(act.ActorId), act.FirstName, act.LastName)
+	_, err := Database.Raw(QueryTemplate).Rows()
+	log.Println(QueryTemplate)
 	if err != nil {
-		log.Fatal(err)
+		log.Println(err)
+		json.NewEncoder(w).Encode(err.Error())
+		return
 	}
 	json.NewEncoder(w).Encode("Successfully created a record in db")
 }
@@ -23,9 +29,13 @@ func GetData(w http.ResponseWriter, r *http.Request) {
 	var act []Actor
 	id := r.URL.Query().Get("id")
 	// Raw SQL Query
-	rows, err := Database.Raw("select * from actor where actor_id = ?", id).Rows()
+	QueryTemplate := fmt.Sprintf(GetDataQuery, id)
+	rows, err := Database.Raw(QueryTemplate).Rows()
+	log.Println(QueryTemplate)
 	if err != nil {
-		log.Fatal(err)
+		log.Println(err)
+		json.NewEncoder(w).Encode(err.Error())
+		return
 	}
 	defer rows.Close()
 	for rows.Next() {
@@ -37,7 +47,6 @@ func GetData(w http.ResponseWriter, r *http.Request) {
 			&newActor.TimeStamp,
 		)
 		act = append(act, newActor)
-		// do something
 	}
 	json.NewEncoder(w).Encode(act)
 }
@@ -46,9 +55,13 @@ func UpdateData(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	var act Actor
 	json.NewDecoder(r.Body).Decode(&act)
-	_, err := Database.Raw("Update actor set first_name=?, last_name=? where actor_id=?", act.FirstName, act.LastName, act.ActorId).Rows()
+	QueryTemplate := fmt.Sprintf(UpdateDataQuery, act.FirstName, act.LastName, strconv.Itoa(act.ActorId))
+	_, err := Database.Raw(QueryTemplate).Rows()
+	log.Println(QueryTemplate)
 	if err != nil {
-		log.Fatal(err)
+		log.Println(err)
+		json.NewEncoder(w).Encode(err.Error())
+		return
 	}
 	json.NewEncoder(w).Encode("Successfully updated a record in db")
 }
@@ -56,9 +69,13 @@ func UpdateData(w http.ResponseWriter, r *http.Request) {
 func DeleteData(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	id := r.URL.Query().Get("id")
-	_, err := Database.Raw("Delete from actor where actor_id=?", id).Rows()
+	QueryTemplate := fmt.Sprintf(DeleteDataQuery , id)
+	_, err := Database.Raw(QueryTemplate).Rows()
+	log.Println(QueryTemplate)
 	if err != nil {
-		log.Fatal(err)
+		log.Println(err)
+		json.NewEncoder(w).Encode(err.Error())
+		return
 	}
 	json.NewEncoder(w).Encode("Successfully deleted a record in db")
 }

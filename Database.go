@@ -1,7 +1,8 @@
 package main
 
 import (
-	"fmt"
+	"log"
+
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )
@@ -15,7 +16,8 @@ var err error
 func DataMigration() {
 	Database, err = gorm.Open(mysql.Open(urlDSN), &gorm.Config{})
 	if err != nil {
-		fmt.Print(err.Error())
+		log.Fatal(err)
 		panic("Connection failed!!")
 	}
+	log.Println("sucessfully connected to mysql server!!")
 }
