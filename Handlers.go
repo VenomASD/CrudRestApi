@@ -7,9 +7,12 @@ import (
 	"net/http"
 	"strconv"
 )
+func enableCors(w *http.ResponseWriter) {
+	(*w).Header().Set("Access-Control-Allow-Origin", "*")
+}
 
 func CreateData(w http.ResponseWriter, r *http.Request) {
-
+	enableCors(&w)
 	w.Header().Set("Content-Type", "application/json")
 	var act Actor
 	json.NewDecoder(r.Body).Decode(&act)
@@ -25,6 +28,7 @@ func CreateData(w http.ResponseWriter, r *http.Request) {
 }
 
 func GetData(w http.ResponseWriter, r *http.Request) {
+	enableCors(&w)
 	w.Header().Set("Content-Type", "application/json")
 	var act []Actor
 	id := r.URL.Query().Get("id")
@@ -50,8 +54,35 @@ func GetData(w http.ResponseWriter, r *http.Request) {
 	}
 	json.NewEncoder(w).Encode(act)
 }
+func GetAllData(w http.ResponseWriter, r *http.Request) {
+	enableCors(&w)
+	w.Header().Set("Content-Type", "application/json")
+	var act []Actor
+	// Raw SQL Query
+	QueryTemplate := fmt.Sprintf(GetAllDataQuery)
+	rows, err := Database.Raw(QueryTemplate).Rows()
+	log.Println(QueryTemplate)
+	if err != nil {
+		log.Println(err)
+		json.NewEncoder(w).Encode(err.Error())
+		return
+	}
+	defer rows.Close()
+	for rows.Next() {
+		var newActor Actor
+		rows.Scan(
+			&newActor.ActorId,
+			&newActor.FirstName,
+			&newActor.LastName,
+			&newActor.TimeStamp,
+		)
+		act = append(act, newActor)
+	}
+	json.NewEncoder(w).Encode(act)
+}
 
 func UpdateData(w http.ResponseWriter, r *http.Request) {
+	enableCors(&w)
 	w.Header().Set("Content-Type", "application/json")
 	var act Actor
 	json.NewDecoder(r.Body).Decode(&act)
@@ -67,6 +98,7 @@ func UpdateData(w http.ResponseWriter, r *http.Request) {
 }
 
 func DeleteData(w http.ResponseWriter, r *http.Request) {
+	enableCors(&w)
 	w.Header().Set("Content-Type", "application/json")
 	id := r.URL.Query().Get("id")
 	QueryTemplate := fmt.Sprintf(DeleteDataQuery , id)

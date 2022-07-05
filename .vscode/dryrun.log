@@ -1,7 +1,5 @@
-make.exe --dry-run --always-make --keep-going --print-directory
+make.exe build --dry-run --always-make --keep-going --print-directory
 make: Entering directory 'c:/Users/hp/Desktop/CrudRestApi'
 go build
- 
-go test -v
 make: Leaving directory 'c:/Users/hp/Desktop/CrudRestApi'
  
