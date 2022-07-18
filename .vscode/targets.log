@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Tue Jul 05 21:05:54 2022
+# Make data base, printed on Tue Jul 19 01:59:54 2022
 
 # Variables
 
@@ -19,8 +19,6 @@ LC_ALL = C
 USERPROFILE = C:\Users\hp
 # environment
 LOCALAPPDATA = C:\Users\hp\AppData\Local
-# environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-273b0476-b0e1-462b-a58b-9a955f060de1-sock
 # environment
 VSCODE_CWD = C:\Users\hp\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -38,7 +36,7 @@ GOPATH = C:\Users\hp\go
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_1896_KVFAKOTAQGIPXLZE
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_13108_QZZHBHOYNEWOXXSF
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -47,12 +45,10 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 %D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
 # automatic
 ^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
-# environment
-VSCODE_LOG_STACK = false
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\hp\AppData\Roaming\Code\CachedData\30d9c6cd9483b2cc586687151bcbcd635f373630
+VSCODE_CODE_CACHE_PATH = C:\Users\hp\AppData\Roaming\Code\CachedData\b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a
 # environment
 LANG = C
 # default
@@ -69,8 +65,6 @@ MAKEFLAGS = pqrR
 ONEDRIVE = C:\Users\hp\OneDrive
 # makefile
 CURDIR := c:/Users/hp/Desktop/CrudRestApi
-# environment
-VSCODE_PIPE_LOGGING = true
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # automatic
@@ -90,9 +84,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_VERBOSE_LOGGING = true
-# environment
-VSCODE_PID = 1896
+VSCODE_PID = 13108
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -101,6 +93,8 @@ VSCODE_PID = 1896
 <D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+ONEDRIVECONSUMER = C:\Users\hp\OneDrive
 # default
 MAKE_HOST := Windows32
 # environment
@@ -122,7 +116,7 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\Go\bin;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\hp\AppData\Local\Microsoft\WindowsApps;;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hp\go\bin;C:\Users\hp\AppData\Roaming\npm
+PATH = C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\Go\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\hp\AppData\Local\Microsoft\WindowsApps;;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hp\go\bin;C:\Users\hp\AppData\Roaming\npm
 # environment
 ZES_ENABLE_SYSMAN = 1
 # environment
@@ -136,10 +130,7 @@ PROMPT = $P$G
 # environment
 CHOCOLATEYLASTPATHUPDATE = 133005600840482386
 # environment
-LOGONSERVER = \\DESKTO 
-P-2U25O4G
-# environment
-VSCODE_LOG_NATIVE = false
+LOGONSERVER = \\DESKTOP-2U25O4G
 # environment
 USERNAME = hp
 # environment
@@ -161,7 +152,6 @@ GNUMAKEFLAGS :=
 # environment
 OS = Windows_NT
 # makefile
- 
 .DEFAULT_GOAL := all
 # default
 MAKE_VERSION := 4.3
@@ -190,7 +180,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 TEMP = C:\Users\hp\AppData\Local\Temp
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\5c715320e1957803a64bd05f6d791b10-1.68.1-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\5c715320e1957803a64bd05f6d791b10-1.69.1-main-sock
 # environment
 GOPROXY = https://proxy.golang.org,direct
 # default
@@ -204,8 +194,7 @@ ALLUSERSPROFILE = C:\ProgramData
 # environment
 SESSIONNAME = Console
 # default
-.FEATURES := target-specific order-on 
-ly second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
 # environment
 PROCESSOR_REVISION = 8e0a
 # environment
@@ -213,7 +202,7 @@ CHOCOLATEYTOOLSLOCATION = C:\tools
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 142 Stepping 10, GenuineIntel
 # variable set hash-table stats:
-# Load=99/1024=10%, Rehash=0, Collisions=8/129=6%
+# Load=95/1024=9%, Rehash=0, Collisions=8/125=6%
 
 # Pattern-specific Variable Values
 
@@ -221,10 +210,9 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 142 Stepping 10, GenuineIntel
 
 # Directories
 
-# . (key c:/Users/hp/De 
-sktop/CrudRestApi, mtime 1656945809): 16 files, no impossibilities.
+# . (key c:/Users/hp/Desktop/CrudRestApi, mtime 1658176175): 17 files, no impossibilities.
 
-# 16 files, no impossibilities in 1 directories.
+# 17 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -255,7 +243,8 @@ all: build test
 # Load=0/32=0%, Rehash=0, Collisions=0/3=0%
 
 run:
-#  Implicit rule search has not been done.
+#  Implicit rule  
+search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 7):
@@ -283,7 +272,8 @@ build:
 # ? := 
 # automatic
 # | := 
-# variable set hash-table stats:
+# variable set  
+hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=1/11=9%
 #  recipe to execute (from 'Makefile', line 3):
 	go build
@@ -309,12 +299,12 @@ test:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 22 / storage = 181 B / avg = 8 B
-# current buf: size = 8174 B / used = 181 B / count = 22 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 23 / storage = 196 B / avg = 8 B
+# current buf: size = 8174 B / used = 196 B / count = 23 / avg = 8 B
 
-# strcache performance: lookups = 34 / hit rate = 35%
+# strcache performance: lookups = 35 / hit rate = 34%
 # hash-table stats:
-# Load=22/8192=0%, Rehash=0, Collisions=0/34=0%
-# Finished Make data base on Tue Jul 05 21:05:54 2022
+# Load=23/8192=0%, Rehash=0, Collisions=0/35=0%
+# Finished Make data base on Tue Jul 19 01:59:54 2022
 
  
