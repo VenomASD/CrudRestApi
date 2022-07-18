@@ -10,6 +10,7 @@ import (
 func HandlerRouting() {
 	r := mux.NewRouter()
 	r.HandleFunc("/data", GetData).Methods("GET")
+	r.HandleFunc("/allData", GetAllData).Methods("GET")
 	r.HandleFunc("/data", CreateData).Methods("POST")
 	r.HandleFunc("/data", UpdateData).Methods("PUT")
 	r.HandleFunc("/data", DeleteData).Methods("DELETE")
