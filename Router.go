@@ -15,6 +15,6 @@ func HandlerRouting() {
 	r.HandleFunc("/data", UpdateData).Methods("PUT")
 	r.HandleFunc("/data", DeleteData).Methods("DELETE")
 
-	log.Println("Listening on port 8080..........")
-	http.ListenAndServe(":8080", r)
+	log.Println("Listening on port 8081..........")
+	http.ListenAndServe(":8081", r)
 }
