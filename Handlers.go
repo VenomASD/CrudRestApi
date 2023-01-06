@@ -111,3 +111,18 @@ func DeleteData(w http.ResponseWriter, r *http.Request) {
 	}
 	json.NewEncoder(w).Encode("Successfully deleted a record in db")
 }
+
+func ProduceData(w http.ResponseWriter, r *http.Request) {
+	enableCors(&w)
+	w.Header().Set("Content-Type", "application/json")
+	var msg string
+	json.NewDecoder(r.Body).Decode(msg)
+	log.Println(msg)
+	if err != nil {
+		log.Println(err)
+		json.NewEncoder(w).Encode(err.Error())
+		return
+	}
+	StartProducer(msg)
+	json.NewEncoder(w).Encode("Success processed req!")
+}

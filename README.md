@@ -15,7 +15,8 @@ use phpmyadmin to manage db
 
 #Use Swagger to populate API specification
 
-#JenkinsFile
+#Jenkins via local docker desktop
+1) docker run -p 8080:8080 -p 50000:50000 -d -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
 
 #Docker commands
 1) docker build -t crudrestapi:latest .

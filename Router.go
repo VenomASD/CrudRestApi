@@ -15,6 +15,8 @@ func HandlerRouting() {
 	r.HandleFunc("/data", UpdateData).Methods("PUT")
 	r.HandleFunc("/data", DeleteData).Methods("DELETE")
 
+	//publishers triggers
+	r.HandleFunc("/producemsg", ProduceData).Methods("POST")
 	log.Println("Listening on port 8081..........")
 	http.ListenAndServe(":8081", r)
 }

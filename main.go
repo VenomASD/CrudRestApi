@@ -1,6 +1,9 @@
 package main
 
 func main() {
-	DataMigration()
+	
+	//StartProducer()
+	//DataMigration()
 	HandlerRouting()
+	StartConsumer()
 }
