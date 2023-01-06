@@ -24,3 +24,6 @@ use phpmyadmin to manage db
 2) docker run --name crudrestapi -p 8081:8081 crudrestapi:latest
     Runs your image as a container on port 8081
 3) use local docker desktop to view your container and its logs
+
+#pulsar via local docker desktop
+1) docker run -it -p 6650:6650  -p 3000:3000 --mount source=pulsardata,target=/pulsar/data --mount source=pulsarconf,target=/pulsar/conf apachepulsar/pulsar:2.10.3 bin/pulsar standalone
