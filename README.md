@@ -1,8 +1,13 @@
 # CrudRestApi
 This is a simple code in golang to implement CRUD REST API.
 Database: 
-https://www.freesqldatabase.com/account/
-use phpmyadmin to manage db
+1. install docker desktop from website
+2. docker pull mysql
+3. docker run -e MYSQL_ROOT_PASSWORD=root -d -p 127.0.0.1:3307:3306 mysql
+4. go to docker test terminal and create databse there.
+    a) create database mydb; 
+    b) create table actor (actor_id int , first_name varchar(40), last_name varchar(40), timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP );
+
 
 #How to run code:
 1) go build (in case you have made some changes in code) : creates a single exe file by using all the go files.

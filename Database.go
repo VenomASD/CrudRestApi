@@ -8,7 +8,7 @@ import (
 )
 
 var Database *gorm.DB
-var urlDSN = "sql6523101:qpt2c1wn5i@tcp(sql6.freesqldatabase.com:3306)/sql6523101?parseTime=true"
+var urlDSN = "root:root@tcp(127.0.0.1:3307)/mydb?parseTime=true"
 
 //"root:<mypassword>@tcp(localhost:3306)/<dbName>"
 var err error

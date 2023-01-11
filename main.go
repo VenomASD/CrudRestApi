@@ -3,7 +3,7 @@ package main
 func main() {
 	
 	//StartProducer()
-	//DataMigration()
+	DataMigration()
 	HandlerRouting()
-	StartConsumer()
+	// StartConsumer()
 }
