@@ -4,9 +4,6 @@ pipeline {
 
   // Ensure the desired Go version is installed for all stages,
   // using the name defined in the Global Tool Configuration
-  tools { 
-    go 'go1.14' 
-  }
 
   stages {
     stage('Build') {
