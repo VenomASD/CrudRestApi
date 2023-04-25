@@ -4,7 +4,7 @@ Database:
 1. install docker desktop from website
 2. docker pull mysql
 3. docker run -e MYSQL_ROOT_PASSWORD=root -d -p 127.0.0.1:3307:3306 mysql
-4. go to docker test terminal and create databse there.
+4. go to docker test terminal (mysql -u root -p   i.e root)and create databse there.
     a) create database mydb; 
     b) create table actor (actor_id int , first_name varchar(40), last_name varchar(40), timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP );
 
