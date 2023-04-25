@@ -10,8 +10,8 @@ Database:
 
 
 #How to run code:
-1) go build (in case you have made some changes in code) : creates a single exe file by using all the go files.
-2) .\CrudRestApi.exe : to run the service
+1) go build (in case you have made some changes in code) : creates a single exe file by using all the go files OR make build
+2) .\CrudRestApi.exe : to run the service OR make run
 3) use postman app to send Http request to the API
 
 #Additional cmds:
