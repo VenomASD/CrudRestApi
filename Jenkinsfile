@@ -9,6 +9,9 @@ pipeline {
     stage('Build') {
       steps {
         // Output will be something like "go version go1.19 darwin/arm64"
+        sh 'sudo apt update'
+        sh 'sudo apt upgrade'
+        sh 'sudo apt install golang-go'
         sh 'go version'
       }
     }
