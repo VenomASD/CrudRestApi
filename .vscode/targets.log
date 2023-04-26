@@ -6,12 +6,10 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Jul 03 23:01:42 2022
+# Make data base, printed on Tue Apr 25 21:52:38 2023
 
 # Variables
 
-# environment
-FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
 SYSTEMDRIVE = C:
 # environment
@@ -21,17 +19,15 @@ USERPROFILE = C:\Users\hp
 # environment
 LOCALAPPDATA = C:\Users\hp\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-8bec97a4-5bc9-4f77-b839-c37616a7d374-sock
-# environment
 VSCODE_CWD = C:\Users\hp\AppData\Local\Programs\Microsoft VS Code
 # environment
 CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
 # environment
-SYSTEMROOT = C:\Windows
+SYSTEMROOT = C:\WINDOWS
 # environment
 PROCESSOR_LEVEL = 6
 # environment
-PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
 # default
 MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # environment
@@ -39,9 +35,7 @@ GOPATH = C:\Users\hp\go
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_7764_XBHDSNWTJOEVNNCD
-# environment
-FPS_BROWSER_USER_PROFILE_STRING = Default
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\LOCAL\crashpad_14136_BIQRFJTTTOJSBWRX
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -50,12 +44,10 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 %D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
 # automatic
 ^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
-# environment
-VSCODE_LOG_STACK = false
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\hp\AppData\Roaming\Code\CachedData\30d9c6cd9483b2cc586687151bcbcd635f373630
+VSCODE_CODE_CACHE_PATH = C:\Users\hp\AppData\Roaming\Code\CachedData\97dec172d3256f8ca4bfb2143f3f76b503ca0534
 # environment
 LANG = C
 # default
@@ -73,8 +65,6 @@ ONEDRIVE = C:\Users\hp\OneDrive
 # makefile
 CURDIR := c:/Users/hp/Desktop/CrudRestApi
 # environment
-VSCODE_PIPE_LOGGING = true
-# environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # automatic
 *D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
@@ -88,14 +78,14 @@ MFLAGS = -pqrR
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # automatic
 +D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
+# environment
+EFC_7208 = 1
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_VERBOSE_LOGGING = true
-# environment
-VSCODE_PID = 7764
+VSCODE_PID = 14136
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -104,6 +94,8 @@ VSCODE_PID = 7764
 <D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+ONEDRIVECONSUMER = C:\Users\hp\OneDrive
 # default
 MAKE_HOST := Windows32
 # environment
@@ -117,15 +109,15 @@ MAKECMDGOALS := all
 # environment
 DRIVERDATA = C:\Windows\System32\Drivers\DriverData
 # environment
-COMSPEC = C:\Windows\system32\cmd.exe
+COMSPEC = C:\WINDOWS\system32\cmd.exe
 # environment
-WINDIR = C:\Windows
+WINDIR = C:\WINDOWS
 # environment
 MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\Go\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\hp\AppData\Local\Microsoft\WindowsApps;;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hp\go\bin
+PATH = C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\Go\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\dotnet\;C:\TDM-GCC-64\bin;C:\Users\hp\AppData\Local\Microsoft\WindowsApps;;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hp\go\bin;C:\Users\hp\AppData\Roaming\npm
 # environment
 ZES_ENABLE_SYSMAN = 1
 # environment
@@ -140,8 +132,6 @@ PROMPT = $P$G
 CHOCOLATEYLASTPATHUPDATE = 133005600840482386
 # environment
 LOGONSERVER = \\DESKTOP-2U25O4G
-# environment
-VSCODE_LOG_NATIVE = false
 # environment
 USERNAME = hp
 # environment
@@ -162,6 +152,8 @@ USERDOMAIN = DESKTOP-2U25O4G
 GNUMAKEFLAGS := 
 # environment
 OS = Windows_NT
+# environment
+__COMPAT_LAYER = DetectorsAppHealth
 # makefile
 .DEFAULT_GOAL := all
 # default
@@ -191,7 +183,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 TEMP = C:\Users\hp\AppData\Local\Temp
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\5c715320e1957803a64bd05f6d791b10-1.68.1-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\5c715320e1957803a64bd05f6d791b10-1.74.3-main-sock
 # environment
 GOPROXY = https://proxy.golang.org,direct
 # default
@@ -213,7 +205,7 @@ CHOCOLATEYTOOLSLOCATION = C:\tools
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 142 Stepping 10, GenuineIntel
 # variable set hash-table stats:
-# Load=101/1024=10%, Rehash=0, Collisions=9/131=7%
+# Load=97/1024=9%, Rehash=0, Collisions=8/127=6%
 
 # Pattern-specific Variable Values
 
@@ -221,9 +213,9 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 142 Stepping 10, GenuineIntel
 
 # Directories
 
-# . (key c:/Users/hp/Desktop/CrudRestApi, mtime 1656138618): 15 files, no impossibilities.
+# . (key c:/Users/hp/Desktop/CrudRestApi, mtime 1673447943): 21 files, no impossibilities.
 
-# 15 files, no impossibilities in 1 directories.
+# 21 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -234,7 +226,7 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 142 Stepping 10, GenuineIntel
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-25 11:51:56
+#  Last modified 2022-09-29 21:00:31
 #  File has been updated.
 #  Successfully updated.
 
@@ -242,8 +234,7 @@ Makefile:
 .DEFAULT:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
-#  File has not been 
- updated.
+#  File has not been updated.
 
 all: build test
 #  Command line target.
@@ -309,12 +300,12 @@ test:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 21 / storage = 168 B / avg = 8 B
-# current buf: size = 8174 B / used = 168 B / count = 21 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 27 / storage = 243 B / avg = 9 B
+# current buf: size = 8174 B / used = 243 B / count = 27 / avg = 9 B
 
-# strcache performance: lookups = 33 / hit rate = 36%
+# strcache performance: lookups = 39 / hit rate = 30%
 # hash-table stats:
-# Load=21/8192=0%, Rehash=0, Collisions=0/33=0%
-# Finished Make data base on Sun Jul 03 23:01:42 2022
+# Load=27/8192=0%, Rehash=0, Collisions=0/39=0%
+# Finished Make data base on Tue Apr 25 21:52:38 2023
 
  
