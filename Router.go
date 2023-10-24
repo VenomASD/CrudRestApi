@@ -6,7 +6,7 @@ import (
 
 	"github.com/gorilla/mux"
 )
-
+// HandlerRouting deeclares and sets up API end points
 func HandlerRouting() {
 	r := mux.NewRouter()
 	r.HandleFunc("/data", GetData).Methods("GET")
