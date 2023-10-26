@@ -1,219 +1,153 @@
-make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
-# GNU Make 4.3
-# Built for Windows32
-# Copyright (C) 1988-2020 Free Software Foundation, Inc.
-# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
-# This is free software: you are free to change and redistribute it.
-# There is NO WARRANTY, to the extent permitted by law.
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
 
-# Make data base, printed on Sun Jul 03 23:01:42 2022
+# This program built for i386-apple-darwin11.3.0
+ 
+
+# Make data base, printed on Thu Oct 26 22:17:37 2023
 
 # Variables
 
-# environment
-FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
-# environment
-SYSTEMDRIVE = C:
-# environment
-LC_ALL = C
-# environment
-USERPROFILE = C:\Users\hp
-# environment
-LOCALAPPDATA = C:\Users\hp\AppData\Local
-# environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-8bec97a4-5bc9-4f77-b839-c37616a7d374-sock
-# environment
-VSCODE_CWD = C:\Users\hp\AppData\Local\Programs\Microsoft VS Code
-# environment
-CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
-# environment
-SYSTEMROOT = C:\Windows
-# environment
-PROCESSOR_LEVEL = 6
-# environment
-PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
-# default
-MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
-# environment
-GOPATH = C:\Users\hp\go
 # automatic
-@D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
-# environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_7764_XBHDSNWTJOEVNNCD
-# environment
-FPS_BROWSER_USER_PROFILE_STRING = Default
-# environment
-VSCODE_HANDLES_UNCAUGHT_ERRORS = true
-# default
-.VARIABLES := 
-# automatic
-%D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
-# automatic
-^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
-# environment
-VSCODE_LOG_STACK = false
-# automatic
-%F = $(notdir $%)
-# environment
-VSCODE_CODE_CACHE_PATH = C:\Users\hp\AppData\Roaming\Code\CachedData\30d9c6cd9483b2cc586687151bcbcd635f373630
-# environment
-LANG = C
-# default
-.LOADED := 
-# environment
-TMP = C:\Users\hp\AppData\Local\Temp
-# default
-.INCLUDE_DIRS = .
-# environment
-PROCESSOR_ARCHITEW6432 = AMD64
-# makefile
-MAKEFLAGS = pqrR
-# environment
-ONEDRIVE = C:\Users\hp\OneDrive
-# makefile
-CURDIR := c:/Users/hp/Desktop/CrudRestApi
-# environment
-VSCODE_PIPE_LOGGING = true
-# environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
-# automatic
-*D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
-# environment
-PROGRAMFILES = C:\Program Files (x86)
-# environment
-MFLAGS = -pqrR
-# default
-.SHELLFLAGS := -c
-# environment
-COMMONPROGRAMW6432 = C:\Program Files\Common Files
-# automatic
-+D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
-# makefile (from 'Makefile', line 1)
-MAKEFILE_LIST := Makefile
-# automatic
-@F = $(notdir $@)
-# environment
-VSCODE_VERBOSE_LOGGING = true
-# environment
-VSCODE_PID = 7764
-# automatic
-?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
-# automatic
-*F = $(notdir $*)
-# automatic
-<D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
-# environment
-VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
-# default
-MAKE_HOST := Windows32
-# environment
-PROGRAMDATA = C:\ProgramData
-# default
-SHELL := sh.exe
-# environment
-HOMEPATH = \Users\hp
-# default
-MAKECMDGOALS := all
-# environment
-DRIVERDATA = C:\Windows\System32\Drivers\DriverData
-# environment
-COMSPEC = C:\Windows\system32\cmd.exe
-# environment
-WINDIR = C:\Windows
-# environment
-MAKELEVEL := 0
-# default
-MAKE = $(MAKE_COMMAND)
-# environment
-PATH = C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\Go\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\hp\AppData\Local\Microsoft\WindowsApps;;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hp\go\bin
-# environment
-ZES_ENABLE_SYSMAN = 1
-# environment
-COMPUTERNAME = DESKTOP-2U25O4G
-# default
-MAKEFILES := 
-# automatic
-^F = $(notdir $^)
-# environment
-PROMPT = $P$G
-# environment
-CHOCOLATEYLASTPATHUPDATE = 133005600840482386
-# environment
-LOGONSERVER = \\DESKTOP-2U25O4G
-# environment
-VSCODE_LOG_NATIVE = false
-# environment
-USERNAME = hp
-# environment
-COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+<D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
 # environment
-PROGRAMW6432 = C:\Program Files
-# environment
-PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
 # automatic
-+F = $(notdir $+)
-# environment
-ORIGINAL_XDG_CURRENT_DESKTOP = undefined
-# environment
-USERDOMAIN = DESKTOP-2U25O4G
-# 'override' directive
-GNUMAKEFLAGS := 
-# environment
-OS = Windows_NT
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
 # makefile
-.DEFAULT_GOAL := all
-# default
-MAKE_VERSION := 4.3
+CURDIR := /Users/aadarshsingh/Desktop/projects/CrudRestApi
+# makefile
+SHELL = /bin/sh
 # environment
-PROGRAMFILES(X86) = C:\Program Files (x86)
+VSCODE_NLS_CONFIG = {"locale":"en-gb","osLocale":"en-in","availableLanguages":{},"_languagePackSupport":true}
 # environment
-USERDOMAIN_ROAMINGPROFILE = DESKTOP-2U25O4G
-# environment
-NUMBER_OF_PROCESSORS = 8
-# environment
-PUBLIC = C:\Users\Public
-# environment
-APPDATA = C:\Users\hp\AppData\Roaming
-# environment
-HOMEDRIVE = C:
-# environment
-PROCESSOR_ARCHITECTURE = x86
-# environment
-GOMODCACHE = C:\Users\hp\go\pkg\mod
+_ = /usr/bin/make
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+__CFBundleIdentifier = com.microsoft.VSCode
 # environment
-ELECTRON_RUN_AS_NODE = 1
+INFOPATH = /opt/homebrew/share/info:
 # environment
-TEMP = C:\Users\hp\AppData\Local\Temp
-# environment
-VSCODE_IPC_HOOK = \\.\pipe\5c715320e1957803a64bd05f6d791b10-1.68.1-main-sock
+VSCODE_CWD = /
 # environment
 GOPROXY = https://proxy.golang.org,direct
+# environment
+PATH = /opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
+# environment
+GOPATH = /Users/aadarshsingh/go
+# environment
+ELECTRON_RUN_AS_NODE = 1
 # default
-.RECIPEPREFIX := 
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.nsoFp6v3pb/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+PWD = /Users/aadarshsingh/Desktop/projects/CrudRestApi
+# environment
+HOMEBREW_CELLAR = /opt/homebrew/Cellar
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+MANPATH = /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Developer/CommandLineTools/Toolchains/XcodeDefault.xctoolchain/usr/share/man:/opt/homebrew/share/man::
+# environment
+GOMODCACHE = /Users/aadarshsingh/go/pkg/mod
+# environment
+HOME = /Users/aadarshsingh
+# default
+MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/aadarshsingh/Library/Application Support/Code/CachedData/f1b07bd25dfad64b0167beb15359ae573aecd2cc
+# environment
+LOGNAME = aadarshsingh
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = aadarshsingh
+# makefile
+.DEFAULT_GOAL := all
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/jz/24hjsj492k5c7rynqtn1qvh00000gn/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/aadarshsingh/Library/Application Support/Code/1.83-main.sock
+# environment
+MallocNanoZone = 0
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.430031.430037
+# environment
+HOMEBREW_PREFIX = /opt/homebrew
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+VSCODE_L10N_BUNDLE_LOCATION = 
+# automatic
++F = $(notdir $+)
+# environment
+HOMEBREW_REPOSITORY = /opt/homebrew
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
 # automatic
 <F = $(notdir $<)
+# environment
+LC_ALL = C
+# automatic
+^F = $(notdir $^)
 # default
 SUFFIXES := 
 # environment
-ALLUSERSPROFILE = C:\ProgramData
+MAKELEVEL := 0
 # environment
-SESSIONNAME = Console
-# default
-.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
+LANG = C
 # environment
-PROCESSOR_REVISION = 8e0a
-# environment
-CHOCOLATEYTOOLSLOCATION = C:\tools
-# environment
-PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 142 Stepping 10, GenuineIntel
+VSCODE_PID = 7495
 # variable set hash-table stats:
-# Load=101/1024=10%, Rehash=0, Collisions=9/131=7%
+# Load=67/1024=7%, Rehash=0, Collisions=2/92=2%
 
 # Pattern-specific Variable Values
 
@@ -221,9 +155,9 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 142 Stepping 10, GenuineIntel
 
 # Directories
 
-# . (key c:/Users/hp/Desktop/CrudRestApi, mtime 1656138618): 15 files, no impossibilities.
+# . (device 16777231, inode 541867): 18 files, no impossibilities.
 
-# 15 files, no impossibilities in 1 directories.
+# 18 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -231,69 +165,14 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 142 Stepping 10, GenuineIntel
 
 # Files
 
-# Not a target:
-Makefile:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-25 11:51:56
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-.DEFAULT:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been 
- updated.
-
 all: build test
-#  Command line target.
+#  Command-line target.
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
-
-run:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 7):
-	./CrudRestApi.exe
-
-build:
-#  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
-#  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := build
-# automatic
-# * := 
-# automatic
-# < := 
-# automatic
-# + := 
-# automatic
-# % := 
-# automatic
-# ^ := 
-# automatic
-# ? := 
-# automatic
-# | := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
-#  recipe to execute (from 'Makefile', line 3):
-	go build
-
-test:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 5):
-	go test -v
+# Load=0/32=0%, Rehash=0, Collisions=0/2=0%
 
 # Not a target:
 .SUFFIXES:
@@ -301,20 +180,79 @@ test:
 #  Modification time never checked.
 #  File has not been updated.
 
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2023-10-24 20:48:39
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+test:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 5):
+	go test -v
+	
+
+build:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := build
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/10=10%
+#  commands to execute (from `Makefile', line 3):
+	go build
+	
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+run:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 7):
+	./CrudRestApi.exe
+ 
+	
+
 # files hash-table stats:
 # Load=7/1024=1%, Rehash=0, Collisions=0/23=0%
 # VPATH Search Paths
 
-# No 'vpath' search paths.
+# No `vpath' search paths.
 
-# No general ('VPATH' variable) search path.
+# No general (`VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 21 / storage = 168 B / avg = 8 B
-# current buf: size = 8174 B / used = 168 B / count = 21 / avg = 8 B
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# strcache performance: lookups = 33 / hit rate = 36%
-# hash-table stats:
-# Load=21/8192=0%, Rehash=0, Collisions=0/33=0%
-# Finished Make data base on Sun Jul 03 23:01:42 2022
+# Finished Make data base on Thu Oct 26 22:17:37 2023
 
  

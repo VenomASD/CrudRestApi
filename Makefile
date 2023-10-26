@@ -4,7 +4,7 @@ build:
 test:
 	go test -v
 run:
-	./CrudRestApi.exe
+	./CrudRestApi
 # implement me!!
 # lint:
 # 	golangci-lint 
