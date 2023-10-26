@@ -11,4 +11,5 @@ docker run -d -p 3306:3306 --name mysql-docker-container -e MYSQL_ROOT_PASSWORD=
 
 #start the service 
 
+
 # ./CrudRestApi
