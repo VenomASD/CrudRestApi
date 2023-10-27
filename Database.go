@@ -1,7 +1,9 @@
 package main
 
 import (
+	"fmt"
 	"log"
+	"reflect"
 
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
@@ -22,19 +24,16 @@ func DataMigration() {
 	log.Println("sucessfully connected to mysql server!!")
 
 	// Create necessary tables
-	err = CreateTables()
-	if err!=nil{
-		log.Fatal(err)
-		panic("Failed to create myDB Tables!!")
-	}
+	Migration(Actor{})
 }
 
-func CreateTables() error{
-	err := Database.Raw(CreateEmployeeTable)
-	log.Println(CreateEmployeeTable)
-	if err.Error != nil {
-		log.Println(err.Error)
-		return err.Error
-	}
-	return nil
-}
+func Migration (tableSchema interface{}) {
+	logEntry := fmt.Sprintf("Auto Migrating %s...", reflect.TypeOf(tableSchema))
+	// Create Table in SQL DB corresponding to schema
+	db := Database.AutoMigrate(tableSchema)
+	if db != nil && db.Error != nil {
+        //We have an error
+        log.Fatal(fmt.Sprintf("%s %s with error %s", logEntry, "Failed", db.Error))
+    }
+    log.Println(fmt.Sprintf("%s %s", logEntry, "Success"))
+} 
