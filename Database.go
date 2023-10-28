@@ -10,13 +10,14 @@ import (
 )
 
 var Database *gorm.DB
-var urlDSN = "root:root@tcp(localhost:3306)/mydb?parseTime=true"
 
-//"root:<mypassword>@tcp(localhost:3306)/<dbName>"
+// var urlDSN = "root:root@tcp(localhost:3306)/mydb?parseTime=true"
+
+// "root:<mypassword>@tcp(localhost:3306)/<dbName>"
 var err error
 
-func DataMigration() {
-	Database, err = gorm.Open(mysql.Open(urlDSN), &gorm.Config{})
+func DataMigration(databaseUrl string) {
+	Database, err = gorm.Open(mysql.Open(databaseUrl), &gorm.Config{})
 	if err != nil {
 		log.Fatal(err)
 		panic("Connection failed!!")
@@ -27,13 +28,13 @@ func DataMigration() {
 	Migration(Actor{})
 }
 
-func Migration (tableSchema interface{}) {
+func Migration(tableSchema interface{}) {
 	logEntry := fmt.Sprintf("Auto Migrating %s...", reflect.TypeOf(tableSchema))
 	// Create Table in SQL DB corresponding to schema
 	db := Database.AutoMigrate(tableSchema)
 	if db != nil && db.Error != nil {
-        //We have an error
-        log.Fatal(fmt.Sprintf("%s %s with error %s", logEntry, "Failed", db.Error))
-    }
-    log.Println(fmt.Sprintf("%s %s", logEntry, "Success"))
-} 
+		//We have an error
+		log.Fatal(fmt.Sprintf("%s %s with error %s", logEntry, "Failed", db.Error))
+	}
+	log.Println(fmt.Sprintf("%s %s", logEntry, "Success"))
+}

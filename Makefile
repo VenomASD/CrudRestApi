@@ -4,7 +4,9 @@ build:
 test:
 	go test -v
 run:
-	./CrudRestApi
+	./CrudRestApi local
+fmt:
+	go fmt
 # implement me!!
 # lint:
 # 	golangci-lint 

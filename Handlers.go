@@ -69,7 +69,7 @@ func UpdateData(w http.ResponseWriter, r *http.Request) {
 func DeleteData(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	id := r.URL.Query().Get("id")
-	QueryTemplate := fmt.Sprintf(DeleteDataQuery , id)
+	QueryTemplate := fmt.Sprintf(DeleteDataQuery, id)
 	_, err := Database.Raw(QueryTemplate).Rows()
 	log.Println(QueryTemplate)
 	if err != nil {

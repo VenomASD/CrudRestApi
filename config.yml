@@ -1,0 +1,4 @@
+local:
+  database_url: root:root@tcp(localhost:3306)/mydb?parseTime=true
+dev:
+  database_url: root:root@tcp(localhost:3306)/mydb?parseTime=true
