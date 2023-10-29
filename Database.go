@@ -32,9 +32,9 @@ func Migration(tableSchema interface{}) {
 	logEntry := fmt.Sprintf("Auto Migrating %s...", reflect.TypeOf(tableSchema))
 	// Create Table in SQL DB corresponding to schema
 	db := Database.AutoMigrate(tableSchema)
-	if db != nil && db.Error != nil {
+	if db != nil {
 		//We have an error
-		log.Fatal(fmt.Sprintf("%s %s with error %s", logEntry, "Failed", db.Error))
+		log.Fatal(fmt.Sprintf("%s %s with error %s", logEntry, "Failed", db.Error()))
 	}
 	log.Println(fmt.Sprintf("%s %s", logEntry, "Success"))
 }

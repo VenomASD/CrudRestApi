@@ -18,15 +18,15 @@ func CreateData(w http.ResponseWriter, r *http.Request) {
 	log.Println(QueryTemplate)
 	if err != nil {
 		log.Println(err)
-		json.NewEncoder(w).Encode(err.Error())
+		ServiceJSONResponse(w, http.StatusText(500), "", err)
 		return
 	}
-	json.NewEncoder(w).Encode("Successfully created a record in db")
+	ServiceJSONResponse(w, http.StatusText(200), RecordCreatedSuccess, "")
 }
 
 func GetData(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
-	var act []Actor
+	var act []*Actor
 	id := r.URL.Query().Get("id")
 	// Raw SQL Query
 	QueryTemplate := fmt.Sprintf(GetDataQuery, id)
@@ -34,7 +34,7 @@ func GetData(w http.ResponseWriter, r *http.Request) {
 	log.Println(QueryTemplate)
 	if err != nil {
 		log.Println(err)
-		json.NewEncoder(w).Encode(err.Error())
+		ServiceJSONResponse(w, http.StatusText(500), "", err)
 		return
 	}
 	defer rows.Close()
@@ -46,9 +46,14 @@ func GetData(w http.ResponseWriter, r *http.Request) {
 			&newActor.LastName,
 			&newActor.TimeStamp,
 		)
-		act = append(act, newActor)
+		act = append(act, &newActor)
 	}
-	json.NewEncoder(w).Encode(act)
+	// no record found in db
+	if len(act) == 0 {
+		ServiceJSONResponse(w, http.StatusText(404), RecordNotFound, "")
+		return
+	}
+	ServiceJSONResponse(w, http.StatusText(200), "", act)
 }
 
 func UpdateData(w http.ResponseWriter, r *http.Request) {
@@ -60,10 +65,10 @@ func UpdateData(w http.ResponseWriter, r *http.Request) {
 	log.Println(QueryTemplate)
 	if err != nil {
 		log.Println(err)
-		json.NewEncoder(w).Encode(err.Error())
+		ServiceJSONResponse(w, http.StatusText(500), "", err)
 		return
 	}
-	json.NewEncoder(w).Encode("Successfully updated a record in db")
+	ServiceJSONResponse(w, http.StatusText(200), RecordUpdatedSuccess, "")
 }
 
 func DeleteData(w http.ResponseWriter, r *http.Request) {
@@ -74,8 +79,8 @@ func DeleteData(w http.ResponseWriter, r *http.Request) {
 	log.Println(QueryTemplate)
 	if err != nil {
 		log.Println(err)
-		json.NewEncoder(w).Encode(err.Error())
+		ServiceJSONResponse(w, http.StatusText(500), "", err)
 		return
 	}
-	json.NewEncoder(w).Encode("Successfully deleted a record in db")
+	ServiceJSONResponse(w, http.StatusText(200), RecordDeletedSuccess, "")
 }

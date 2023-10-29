@@ -1,4 +1,3 @@
-all: build test
 build:
 	go build
 test:
