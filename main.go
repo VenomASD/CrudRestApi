@@ -7,7 +7,8 @@ import (
 
 func main() {
 	// Load Confguration for application
-	appConfig, err := LoadConfig(os.Args[1])
+	env := os.Args[1]
+	appConfig, err := LoadConfig(env)
 	if err != nil {
 		panic(err)
 	}
